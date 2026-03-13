@@ -3743,7 +3743,7 @@ data_with_positions <- NHazards_nps_1990_2024_mean %>%
   complete(Position = 1:27) %>%
   mutate(
     Country = case_when(
-      Position == 1 ~ "Slowenia",
+      Position == 1 ~ "Slovenia",
       Position == 2 ~ "Rumania",
       Position == 3 ~ "Bulgaria",
       Position == 4 ~ "Czechia",
@@ -3853,3 +3853,4 @@ ggsave(
   height = 8,
   dpi = 300
 )
+
